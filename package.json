@@ -12,6 +12,7 @@
     "randomizer",
     "util"
   ],
+  "homepage": "https://www.npmjs.com/package/string-randomizer",
   "repository": {
     "type": "git",
     "url": "https://github.com/Blockost/string-randomizer"
