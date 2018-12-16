@@ -12,6 +12,13 @@
     "randomizer",
     "util"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Blockost/string-randomizer"
+  },
+  "bugs": {
+    "url": "https://github.com/Blockost/string-randomizer/issues"
+  },
   "author": "Blockost",
   "license": "MIT"
 }
