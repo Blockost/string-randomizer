@@ -4,6 +4,7 @@
     "moduleResolution": "node",
     "pretty": true,
     "sourceMap": true,
+    "strict": true,
     "noImplicitAny": true,
     "target": "es6",
     "outDir": "dist",
@@ -13,5 +14,5 @@
     "declaration": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

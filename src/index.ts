@@ -1,11 +1,10 @@
 /**
- * Utility class to create random string
- * TODO: Publish this class as an npm module and install it as dependencies
+ * Utility class to create random string.
  */
 export class StringRandomizer {
-  private static readonly ALPHABETIC_LOWERCASE = 'abcdefghijklmnopqrstuvwxyz';
-  private static readonly ALPHABETIC_UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  private static readonly NUMBERS = '0123456789';
+  private static readonly ALPHABETIC_LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
+  private static readonly ALPHABETIC_UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  private static readonly NUMBERS = "0123456789";
 
   /**
    *
@@ -14,7 +13,7 @@ export class StringRandomizer {
    * @param numbers if true, generated string may include numeric characters
    */
   static random(length: number, letters = true, numbers = true): string {
-    let chars = '';
+    let chars = "";
 
     if (letters) {
       chars +=
@@ -29,7 +28,7 @@ export class StringRandomizer {
     return Array(length)
       .fill(0)
       .map(() => chars.charAt(Math.floor(Math.random() * chars.length)))
-      .join('');
+      .join("");
   }
 
   static randomAlphabetic(length: number): string {
