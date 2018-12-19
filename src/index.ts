@@ -7,6 +7,7 @@ export class StringRandomizer {
   private static readonly NUMBERS = "0123456789";
 
   /**
+   * Creates a random string of given length.
    *
    * @param length the length of random string to create
    * @param letters if true, generated string may include alphabetic characters
@@ -31,14 +32,29 @@ export class StringRandomizer {
       .join("");
   }
 
+  /**
+   * Creates a random string of given length containing letters only.
+   *
+   * @param length the length of random string to create
+   */
   static randomAlphabetic(length: number): string {
     return StringRandomizer.random(length, true, false);
   }
 
+  /**
+   * Creates a random string of given length containing numbers only.
+   *
+   * @param length the length of random string to create
+   */
   static randomNumeric(length: number): string {
     return StringRandomizer.random(length, false, true);
   }
 
+  /**
+   * Creates a random string of given length containing both letters and numbers.
+   *
+   * @param length the length of random string to create
+   */
   static randomAlphaNumeric(length: number): string {
     return StringRandomizer.random(length, true, true);
   }
