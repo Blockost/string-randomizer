@@ -7,7 +7,7 @@ notifications:
     on_failure: always
 install:
   - npm install
-scripts: # test build (Continuous Integration)
+script: # test build (Continuous Integration)
   - npm run build
   - npm run test
 cache: # Retrieve modules from cache and update when something changes
