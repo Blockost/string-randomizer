@@ -1,7 +1,10 @@
 language: node_js
 node_js:
   - "lts/*" # Latest LTS version of NodeJs
-email: true # if set to `false`: no email notifications
+notifications:
+  email:
+    on_success: always
+    on_failure: always
 install:
   - npm install
 scripts: # test build (Continuous Integration)
